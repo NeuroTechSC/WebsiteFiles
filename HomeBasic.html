@@ -1,32 +1,221 @@
 <!DOCTYPE html>
 <html>
 	<body>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- Black bar -->
-		<hr style="height:80px; background-color:navy">
 
-		<h1 style = "position: absolute; top: 100px; left: 30%;">Welcome to NeuroTechSC!</h1>
+		<h1 style = "position: absolute; top: 120px; left: 30px;">Welcome to NeuroTechSC!</h1>
 
-		<p style = "position: absolute; top: 150px; left: 30%;"><b>Insert goals/mission here<b></p>
-
-		<p style = "position: absolute; top: 200px; left: 30%;"><b>Insert logo here<b></p>
+		<p style = "position: absolute; top: 170px; left: 30px;"><b>Insert goals/mission here</b></p>
 
 
 
-		<p style = "position: absolute; top: 150px;"><b>NavBar<b></p>
-
-		<p style = "position: absolute; top: 200px;"><b>Home<b></p>
-			<p style = "position: absolute; top: 220px; left: 40px;"><b>Logo, mission, projects, how to join, calendar<b></p>
-
-		<p style = "position: absolute; top: 270px;"><b>Blog<b></p>		
-			<p style = "position: absolute; top: 290px; left: 40px;"><b>direct link to bear blog<b></p>	
-
-		<p style = "position: absolute; top: 340px;"><b>Officers and Team Reps<b></p>	
-			<p style = "position: absolute; top: 360px; left: 40px;">headshot, name, blurb</p>
-
-		<p style = "position: absolute; top: 410px;"><b>Contact Us<b></p>	
-			<p style = "position: absolute; top: 430px; left: 40px;">neurotechsc email?, instagram?</p>		
 
 
+		<p style = "position: absolute; top: 220px; left: 40px;"><b>Logo, mission, projects, how to join, calendar</b></p>
+
+		<p style = "position: absolute; top: 360px; left: 40px;">headshot, name, blurb</p>
+
+		<p style = "position: absolute; top: 430px; left: 40px;">neurotechsc email?, instagram?</p>		
+
+
+
+
+
+
+<!-- Bootstrap nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; white-space:nowrap;">
+  <a class="navbar-brand" href="#"></a>
+  	<img src="Logo3.png" width="100" height="100" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Officers & Team Reps</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://neurotechsc.bearblog.dev/blog/"; target="_blank">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides slide">
+    <div class="numbertext">1 / 3</div>
+    <img src="Baskins.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides slide">
+    <div class="numbertext">2 / 3</div>
+    <img src="Logo1.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides slide">
+    <div class="numbertext">3 / 3</div>
+    <img src="Logo4.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="position: absolute; top: 800px; left: 200px;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<style>
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  min-width: 1000px;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  margin: auto;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slide {
+  -webkit-animation: slide 0.5s forwards;
+   -webkit-animation-delay: 2s;
+   animation: slide 0.5s forwards;
+   animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+</style>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 	</body>
 </html>
