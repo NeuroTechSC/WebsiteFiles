@@ -67,6 +67,7 @@ p {
 .topnav {
     background-color: white;
     overflow: hidden;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -90,3 +91,4 @@ p {
     background-color: black;
     color: white;
 }
+
