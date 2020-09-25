@@ -1,0 +1,20 @@
+To Do:
+
+Home Page:
+ - change baskins picture to open source facebook picture (find name) 
+ - insert neurotech logo in top left (logo3.png)
+ - insert slideshow with images (images from slack w/ micaela)
+ - insert embeded google calendar (find embed link)
+
+Our Team:
+ - use OfficerTeamReps.html as a basis 
+ - get Rohan + Cameron pictures
+ - add blurbs + year for each person
+ - send another message to team rep slack about pictures
+
+Blog:
+ - link to bearblog
+
+Contact Us:
+ - insert neurotech UCSC email
+ - insert IG account handle
