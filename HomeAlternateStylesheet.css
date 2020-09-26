@@ -60,12 +60,34 @@ body, html {
     letter-spacing: 10px;
 }
 
+h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
 h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
     color: #111;
 }
+
+h4 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
 
 p {
     color: black;
@@ -98,5 +120,31 @@ p {
 .topnav a.active {
     background-color: black;
     color: white;
+}
+
+
+
+.profiles {
+    position: absolute;
+    white-space:nowrap;
+}
+
+.profiles img{
+    width: 130px;
+}
+
+
+.officers {
+    left: 33%;
+}
+
+
+.officers h1{
+    color: blue;
+}
+
+.teamreps {
+    left: 67%;
+    color: red;
 }
 
