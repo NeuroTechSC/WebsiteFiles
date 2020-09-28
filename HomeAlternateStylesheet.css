@@ -21,6 +21,46 @@ body, html {
     height: 600px;
 }
 
+.bgimg-2 {
+    /*min-height: 100%;*/
+    height: 1300px;
+}
+
+.bgimg-2:before{
+    content: "";
+    background-image: url("RCC.jpg");
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-3 {
+    /*min-height: 100%;*/
+    height: 1300px;
+}
+
+.bgimg-3:before{
+    content: "";
+    background-image: url("Porter.jpg");
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*.parallax {*/
 /*    !* The image used *!*/
 /*    background-image: url("Baskins.jpg");*/
@@ -70,7 +110,7 @@ h1 {
 h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
-    font: 30px "Lato", sans-serif;
+    font: 25px "Lato", sans-serif;
     color: #111;
 }
 
@@ -95,7 +135,7 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: white;
+    background-color: #d9d9d9;
     overflow: hidden;
 
 }
@@ -107,7 +147,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -134,17 +174,129 @@ p {
 
 
 .officers {
-    position: fixed;
-    left: 33%;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+    background-color: #e3f2fd;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-
+/*
 .officers h1{
     color: blue;
 }
+*/
 
 .teamreps {
-    position: fixed;
-    left: 67%;
+    position: absolute;
+    left: 900px;
+    top: 20px;
+    background-color: #e3f2fd;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 960px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slide {
+  -webkit-animation: slide 0.5s forwards;
+   -webkit-animation-delay: 2s;
+   animation: slide 0.5s forwards;
+   animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.socialmedia{
+    white-space:nowrap;
+}
+
+.mainmedia {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    background-color: #e3f2fd;
+    padding-left: 20px;
+    padding-right: 20px;
+}

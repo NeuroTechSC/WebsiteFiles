@@ -8,7 +8,7 @@ Home Page:
 
 Our Team:
  - use OfficerTeamReps.html as a basis 
- - get Rohan + Cameron pictures
+ - get Cameron's picture
  - add blurbs + year for each person
  - send another message to team rep slack about pictures
 
@@ -18,3 +18,5 @@ Blog:
 Contact Us:
  - insert neurotech UCSC email
  - insert IG account handle
+
+Neurotechx website
