@@ -16,19 +16,19 @@ body, html {
 }
 
 .bgimg-1 {
-    background-image: url("Porter2.jpg");
+    background-image: url("LogosAndPictures/Porter2.jpg");
     /*min-height: 100%;*/
     height: 600px;
 }
 
 .bgimg-2 {
     /*min-height: 100%;*/
-    height: 1600px;
+    height: 1750px;
 }
 
 .bgimg-2:before{
     content: "";
-    background-image: url("RCC.jpg");
+    background-image: url("LogosAndPictures/RCC.jpg");
     position: absolute;
     top: 0px;
     right: 0px;
@@ -43,18 +43,18 @@ body, html {
 
 .bgimg-3 {
     /*min-height: 100%;*/
-    height: 1300px;
+    height: 600px;
 }
 
 .bgimg-3:before{
     content: "";
-    background-image: url("Porter.jpg");
+    background-image: url("LogosAndPictures/Porter.jpg");
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: .5;
+    opacity: .9;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +137,6 @@ p {
 .topnav {
     background-color: #d9d9d9;
     overflow: hidden;
-
 }
 
 /* Style the links inside the navigation bar */
@@ -147,7 +146,8 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font: 20px "Lato", sans-serif;
+
 }
 
 /* Change the color of links on hover */
