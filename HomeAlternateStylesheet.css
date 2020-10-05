@@ -131,6 +131,14 @@ h4 {
 
 p {
     color: black;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+a {
+    color: black;
+    font: 20px "Lato", sans-serif;
+    color: #111;
 }
 
 /* Add a black background color to the top navigation */

@@ -5,6 +5,7 @@ Home Page:
  - insert neurotech logo in top left (logo3.png)
  - insert slideshow with images (images from slack w/ micaela)
  - insert embeded google calendar (find embed link)
+ - slideshow timer (after 3 seconds go to next image)
 
 Our Team:
  - use OfficerTeamReps.html as a basis 
