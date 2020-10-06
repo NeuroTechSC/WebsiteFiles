@@ -6,6 +6,7 @@ Home Page:
  - insert slideshow with images (images from slack w/ micaela)
  - insert embeded google calendar (find embed link)
  - slideshow timer (after 3 seconds go to next image)
+ - logo + name off a little bit w/ contact us page
 
 Our Team:
  - use OfficerTeamReps.html as a basis 
