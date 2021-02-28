@@ -112,10 +112,15 @@ button {
     color: #000;
 }
 
+.logo img{
+	height: auto;
+	width: 270px;
+}
+
 .caption {
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 50%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -173,7 +178,7 @@ a {
 /* Add a black background color to the top navigation */
 
 .topnav {
-    background-color: rgb(54, 158, 255);
+    background-color: rgba(47, 117, 186, 255);
     overflow: hidden;
 }
 
