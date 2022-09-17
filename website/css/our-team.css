@@ -9,33 +9,53 @@
     --hardware: #333;
     --publication: #FEF5AC;
     --data: #3D8361;
+    --neurotechBlue: rgb(66,115,181);
 }
 
-.top-card {
-    margin-top: 20vh;
-    margin-left: 15vw;
-    width: 500px;
-    height: 250px;
-    background-color: #3D8361;
-}
-.upper-rect {
-    background-color: magenta;
-    width: 500px;
-    height: 250px;
-
-}
-
-.upper-rect img {
-    float: left
-}
-
-.upper-rect h2 {
+.profile-card {
+    background-color: lightgray;
+    width: 250px;
+    height: 400px;
     display: block;
+    position: relative;
+    overflow: hidden;
     text-align: center;
+    z-index: 2;
 }
 
-.position-rect {
-    background-color: aqua;
-    width: 400px;
-    margin: auto;
+
+
+.circle-bg {
+    content: "";
+    width: 100%;
+    height: 250px;
+    background-color: var(--neurotechBlue);
+    z-index: 1;
+    position: absolute;
+    top: -125px;
+    left: 35px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px
+}
+
+.profile-name, .position, .role-description {
+    padding: 15px 0;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+}
+
+.position {
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 100;
 }
