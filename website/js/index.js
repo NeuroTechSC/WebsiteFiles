@@ -1,19 +1,3 @@
-// adjust header on scroll
-
-window.onscroll = function () {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("header").style.height = "45px";
-
-    } else {
-      document.getElementById("header").style.height = "100px";
-      navItems = document.getElementsByClassName('.navitem')
-
-    }
-  }
-
-  sdfg = document.getElementsByClassName('.navitem')
-
   // reveal elements. Adapted from: https://alvarotrigo.com/blog/css-animations-scroll/
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -30,5 +14,22 @@ function scrollFunction() {
       }
     }
   }
-  
-  window.addEventListener("scroll", reveal);
+
+  // Image carousel
+
+  images = document.getElementsByClassName('carousel-img');
+  numImages = images.length;
+  console.log(numImages)
+
+  let i = 0;
+
+  setInterval(() => {
+    images[i].classList.remove('active');
+    images[i].classList.add('inactive');
+    i += 1;
+    if (i >= numImages) {
+      i = 0;
+    }
+    images[i].classList.remove('inactive');
+    images[i].classList.add('active');
+  }, 5000);
