@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    --neurotechYellow: rgb(241,211,89);
 }
 
 body {
@@ -55,7 +56,9 @@ body {
 
 }
 
-
+.blue a {
+    border-bottom: var(--neurotechYellow) 2px solid;
+}
 .active {
     display: block;
 }
