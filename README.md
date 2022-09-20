@@ -1,14 +1,3 @@
-# NeurotechSC Website Development Branch
+# NeurotechSC Website Files
 
-## TODO:
-
-- Redesign website and push before cornucopia. - Ongoing
-- Redesign website file structure. - Ongoing
-- Create project Gantt Chart - Ongoing
-
-## Webpages TODO
-
-- index.html
-- members.html
-- contact_us.html
-- more...
+Website is contained in `website/`. All other files are artifacts of website creation.
