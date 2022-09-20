@@ -1,0 +1,137 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --ml: #25316D;
+    --software: #D2001A;
+    --hardware: #333;
+    --publication: #FEF5AC;
+    --data: #3D8361;
+    --neurotechBlue: rgb(66,115,181);
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --neurotechYellow: rgb(241,211,89);
+}
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url(../images/campus/ScienceHill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content {
+    margin-top: 100px;
+    width: 100vw;
+}
+
+.line {
+    width: 75%;
+    border-bottom: var(--neurotechYellow) solid 1px;
+
+    margin: 15px auto 15px auto;
+    height: 2px;
+}
+
+.teams-h1 {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+}
+
+.teams-h1::before {
+    position: absolute;
+    content: '';
+    height: 0.1rem;
+    width: 25%;
+    background-color: var(--neurotechYellow);
+    bottom: 0;
+    left: 37.5%;
+    
+}
+
+.team-cards {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    max-width: 300px;
+    padding: 32px;
+}
+
+.team-title {
+    font-size: 1.2rem;
+    padding: 10px 10px;
+}
+.team-description {
+    padding: 10px 10px;
+}
+
+.team-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.club-overview {
+    color:white;
+    display: inline-block;
+    padding: 20px;
+    margin:5% 5% 5% 5%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 40px;
+}
+
+
+.club-overview p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: var(--neurotechYellow) 1px solid;
+}
+
+.p-bold {
+    display: inline;
+}
+
+.club-overview h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+.content {
+    background-image: url(../../images/campus/ScienceHill.jpg);
+    background-attachment: fixed;
+}
+
+.team-cards-wrapper {
+    background-color: white;
+}

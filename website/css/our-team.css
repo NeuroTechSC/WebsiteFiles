@@ -1,0 +1,162 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --ml: #25316D;
+    --software: #D2001A;
+    --hardware: #333;
+    --publication: #FEF5AC;
+    --data: #3D8361;
+    --neurotechBlue: rgb(66,115,181);
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --neurotechYellow: rgb(241,211,89);
+}
+.content {
+    background-image: url('../images/campus/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.officers-header {
+    margin-top: 100px;
+}
+
+.group-header {
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    margin-bottom: 10px;
+    color: white;
+    width: 50%;
+    margin: 20px auto 20px auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+  
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.group-header::before {
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color: var(--neurotechYellow);
+    position: absolute;
+    bottom: 6px;
+    left: 37.5%;
+}
+.card-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile-card {
+    background-color: var(--veryLightGray);
+    width: 250px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    margin: 0px 20px;
+    margin-bottom: 32px;
+}
+
+.profile-card p {
+    padding: 5px 0;
+}
+
+
+
+.circle-bg {
+    content: "";
+    width: 100%;
+    height: 250px;
+    background-color: var(--neurotechBlue);
+    z-index: 1;
+    position: absolute;
+    top: -125px;
+    left: 35px;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 2px 1px 10px gray;
+}
+
+.profile-card .profile-picture {
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.profile-name, .position, .role-description {
+    padding: 15px 0;
+    margin-left: 2px;
+}
+
+
+.profile-name {
+    font-size: 1.2rem;
+    background-color: rgb(0, 61, 101);
+    display: inline-block;
+    padding: 2px 20px;
+    transform: translateY(-15px);
+    border-radius: 15px;
+    color: white;
+    margin: 0px 5px;
+}
+
+.position {
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 100;
+}
+
+.profile-card .socials {
+    margin-top: 10px;
+}
+.profile-card .socials img {
+    width: 32x;
+    height: 32px;
+    padding: 0px 5px;
+}
+
+.socials {
+    display: none;
+}
+
+@media screen and (max-width:650px) {
+
+    body {
+        margin-top: 65 px;
+    }
+    .profile-card {
+        width: 128px;
+        height: 33vh;
+        padding: 0 5px 5px 5px;
+        margin: 0px 5px 10px 5px;
+        border: #333 solid 1px;
+        border-radius: 10px;
+    }
+
+    .profile-card .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
