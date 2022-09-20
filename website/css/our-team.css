@@ -19,7 +19,7 @@
     --neurotechYellow: rgb(241,211,89);
 }
 .content {
-    background-image: url('../../images/campus/Background.jpg');
+    background-image: url('../images/campus/Background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -107,7 +107,9 @@
 
 .profile-name, .position, .role-description {
     padding: 15px 0;
+    margin-left: 2px;
 }
+
 
 .profile-name {
     font-size: 1.2rem;
