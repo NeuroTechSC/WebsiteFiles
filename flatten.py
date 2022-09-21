@@ -12,6 +12,7 @@
 
 import os
 import shutil
+import codecs
 
 # flattenPath(src, begin, num)
 # INPUT source string, beginning of tag (ie. url(, src=, href= ,..), num = number of characters until " character
@@ -25,16 +26,15 @@ def flattenPath(src, begin, num):
 
 def moveToMain(dir, dst, opt=0):
     # Get list of directories in current directory
-    subDirs = [sub for sub in os.listdir(dir) if '.' not in sub]
+    subDirs = [temp for temp in os.listdir(dir) if '.' not in temp]
     # Recursive step
     if len(subDirs) != 0:
         for sub in subDirs:
-            print(os.path.abspath(f'{dir}/{sub}'))
-            moveToMain(os.path.abspath(sub), dst)
+            moveToMain(os.path.abspath(f'{dir}/{sub}'), dst)
 
     if opt == 0:
         for file in [files for files in os.listdir(dir) if '.' in files]:
-            os.rename(f'{dir}/{file}', dst)
+            os.rename(f'{dir}/{file}', f'{dst}/{file}')
     
     
 def main():
@@ -60,29 +60,26 @@ def main():
                     content[i] = flattenPath(line, "src=", 5)
                 elif 'rel="stylesheet"' in line:
                     content[i] = flattenPath(line, "href=", 6)
-                elif 'rel="shortcut icon"':
+                elif 'rel="shortcut icon"' in line:
                     content[i] = flattenPath(line, "href=", 6)
-
             inFile.truncate(0)
             inFile.seek(0)
             inFile.writelines(content)
 
     for cssFile in cssFiles:
-        print(cssFile)
         with open(f'{FLAT_DIR}/css/{cssFile}', 'r+') as inFile:
             content = inFile.readlines()
             for i, line in enumerate(content):
                 if "url(\"" in line:
-                    print('here')
 
                     content[i] = flattenPath(line, "url(\"", 5)
             inFile.truncate(0)
             inFile.seek(0)
-            inFile.writelines(content)                 
+            inFile.writelines(content)
 
 
     # Move all files into FLAT_DIR directory
-    moveToMain(FLAT_DIR, FLAT_DIR, 1)
+    moveToMain(FLAT_DIR, f'{FLAT_DIR}', 1)
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Logo5.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about-us.css">
+    <title>About Us</title>
+</head>
+
+<body>
+        <!-- HEADER -->
+    <header id="header" class="normal-header">
+        <div class="nav-left nav">
+            <ul>
+                <a href="about-us.html"><li class="navitem">About Our Club</li></a>
+                <a href="our-team.html"><li class="navitem">Our Team</li></a>
+            </ul>
+        </div>
+        <a href="index.html"><img src="Logo5.png" alt="" class="nav-logo"></a>
+        <div class="nav-right">
+            <ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPfGXRWRUx7sKybmh-t8OIEO2VZv25SVXGhgTD2kS5dgMcw/viewform" target="_blank"><li class="navitem">Get Involved</li></a>
+                <a href="contact-us.html"><li class="navitem">Contact Us</li></a>
+            </ul>
+            <div class="normal-header-socials">
+                <a href="https://www.linkedin.com/company/neurotechsc" target="_blank"><img src="linkedin-icon.svg" alt=""></a>
+                <a href="https://www.instagram.com/neurotechsc/"><img src="instagram-logo.svg" alt=""></a>
+                <a href="https://github.com/neuroTechSC/"><img src="github-icon.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-header" id="mobile-header">
+        <a href="index.html"><img src="Logo5.png" alt=""></a>
+        <div class="links" id="links">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Our Club</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPfGXRWRUx7sKybmh-t8OIEO2VZv25SVXGhgTD2kS5dgMcw/viewform" target="_blank">Get Involved</a>
+            <a href="contact-us.html">Contact Us</a>
+            <p>Socials</p>
+            <div class="normal-header-socials">
+                <a href="https://www.linkedin.com/company/neurotechsc" target="_blank"><img src="linkedin-icon.svg" alt=""></a>
+                <a href="https://www.instagram.com/neurotechsc/"><img src="instagram-logo.svg" alt=""></a>
+                <a href="https://github.com/neuroTechSC/"><img src="github-icon.svg" alt=""></a>
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" class="mobile-header-bars" id="mobile-header-bars">
+            <img src="hamburger.svg" alt="">
+        </a>
+    </div>
+
+    <!-- END HEADER -->
+
+        <!-- Start webpage content -->
+
+        <div class="content">
+            <div class="club-overview">
+                <h1>Club Overview</h1>
+                <p>We are the official Neurotechnology club at UCSC! We focus on project building and education covering the topics of brain-computer interaction, neuroscience, and AI, and every year we submit a project to the NeurotechX competition. This year our project will be using SSVEPs as a means to alternatively communicate through the input of visual responses.</p>
+                <div class="line"></div>
+                <p>Our four teams focus on hardware, machine learning, data, and software respectively.</p>
+                <div class="line"></div>
+                <p>Some more about our club, <span>we received 1st place in the U.S. in the NeuroTechX Student Competition</span> for a silent-speech interface that takes in user EMG signals from the jawline area and predicts if a user is thinking ‘yes’ or ‘no’ with 90% accuracy. If the subject interests you, we welcome you to connect with us at our weekly meetings, we usually meet Tuesdays at 7pm so watch out on discord for updates on our next meeting!</p>
+            
+            
+            </div>
+
+            <div class="team-cards-wrapper">
+                <h1 class="teams-h1">Teams</h1>
+                <div class="team-cards">
+                    <div class="team-card">
+                        <img class="team-img" src="hardware-cropped.png" alt="">
+                        <h2 class="team-title">Hardware</h2>
+                        <p class="team-description">The hardware team is responsible for converting physical SSVEP brain waves into a machine readable format. The hardware team uses an OpenBCI board with neurodes that connect to the user's head to accomplish this.</p>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-img" src="data-cover.svg" alt="">
+                        <h2 class="team-title">Data</h2>
+                        <p class="team-description">The data team is responsible for cleaning the noisy SSVEP brain waves into a usable format. The data team uses a variety of techniques to accomplish this goal which include data normalization and fourier transforms.</p>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-img" src="machine-learning-cover.svg" alt="">
+                        <h2 class="team-title">Machine Learning</h2>
+                        <p class="team-description">Machine learning is utilized in our projects to interpret SSVEP brain waves into something we can understand and classify. The machine learning team gets cleaned SSVEP data from the data team which they then utilize to create models for our research projects.</p>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-img" src="svr_ui.png" alt="">
+                        <h2 class="team-title">Software</h2>
+                        <p class="team-description">The software team is the bridge between the other teams. Software is created to bridge the hardware to software, and pipeline the different aspects of the club project. The software team also creates a user interface between a user's own brain waves and technology.</p>
+                    </div>
+
+                    
+            </div>
+
+        </div>
+    <script src="header.js"></script>
+</body>
+</html>
