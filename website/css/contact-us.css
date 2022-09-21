@@ -20,7 +20,7 @@
 }
 
 .content {
-    background-image: url('../images/campus/Baskins.jpg');
+    background-image: url("../images/backgrounds/Baskins.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

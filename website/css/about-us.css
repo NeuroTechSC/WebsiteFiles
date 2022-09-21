@@ -23,7 +23,7 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background-image: url(../images/campus/ScienceHill.jpg);
+    background-image: url("../images/backgrounds/ScienceHill.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -128,7 +128,7 @@ span {
     padding: 10px;
 }
 .content {
-    background-image: url(../../images/campus/ScienceHill.jpg);
+    background-image: url("../images/backgrounds/ScienceHill.jpg");
     background-attachment: fixed;
 }
 
