@@ -124,6 +124,37 @@ body {
     z-index: 20;
 }
 
+/* On Scroll Animation */
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hidden-down {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+
 /* Below css adapted from https://codepen.io/jared-parsons/pen/xxVoebB */
 
 
@@ -145,7 +176,7 @@ body {
 
 @media (max-width: 800px) {
     .box {
-        height: 200px;
+        height: 250px;
         background-color: white;
     }
 

@@ -34,6 +34,10 @@ def moveToMain(dir, dst, opt=0):
 
     if opt == 0:
         for file in [files for files in os.listdir(dir) if '.' in files]:
+            if '.DS_Store' in file:
+                if os.path.exists('.DS_Store'):
+                    os.remove(file)
+                continue
             os.rename(f'{dir}/{file}', f'{dst}/{file}')
     
     
