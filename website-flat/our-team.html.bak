@@ -13,7 +13,7 @@
     <header id="header" class="normal-header">
         <div class="nav-left nav">
             <ul>
-                <a href="about-us.html"><li class="navitem">About Us</li></a>
+                <a href="about-us.html"><li class="navitem">About Our Club</li></a>
                 <a href="our-team.html"><li class="navitem">Our Team</li></a>
             </ul>
         </div>
