@@ -1,0 +1,4 @@
+- change font on index
+- embed youtube video
+- position descriptions
+- linkedin for all members
