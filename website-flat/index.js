@@ -33,3 +33,18 @@
     images[i].classList.remove('inactive');
     images[i].classList.add('active');
   }, 5000);
+
+  // On scroll animation using intersection observer
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show')
+      }
+    });
+  });
+
+  const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
+  const hiddenElementsDown = document.querySelectorAll('.hidden-down');
+  hiddenElementsLeft.forEach((el) => observer.observe(el));
+  hiddenElementsDown.forEach((el) => observer.observe(el));
