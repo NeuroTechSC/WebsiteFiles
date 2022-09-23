@@ -13,7 +13,7 @@
     <header id="header" class="normal-header">
         <div class="nav-left nav">
             <ul>
-                <a href="about-us.html"><li class="navitem">About Our Club</li></a>
+                <a href="about-us.html"><li class="navitem">About Us</li></a>
                 <a href="our-team.html"><li class="navitem">Our Team</li></a>
             </ul>
         </div>
@@ -63,7 +63,7 @@
                     <img class="profile-picture" src="chris-toukmaji.png" alt="">
                     <h1 class="profile-name">Chris Toukmaji</h1>
                     <h2 class="position">President</h2>
-                    <p class="role-description">Organizes, runs, and delegates club activities.</p>
+                    <p class="role-description">Writes grants, recruits academia and industry partners, and runs club activities.</p>
                     <div class="socials">
                         <a href="https://www.linkedin.com"><img src="linkedin-icon.svg" alt=""></a>
                         <a href="https://www.twitter.com"><img src="twitter-icon.svg" alt=""></a>
@@ -76,7 +76,7 @@
                     <img class="profile-picture" src="lucy-zheng.png" alt="">
                     <h1 class="profile-name">Lucy Zheng</h1>
                     <h2 class="position">Vice President</h2>
-                    <p class="role-description">--</p>
+                    <p class="role-description">Organizes, runs, and delegates club activities.</p>
                     <div class="socials">
                         <a href="https://www.linkedin.com"><img src="linkedin-icon.svg" alt=""></a>
                         <a href="https://www.twitter.com"><img src="twitter-icon.svg" alt=""></a>
@@ -160,7 +160,7 @@
                     <img class="profile-picture" src="placeholder-avatar.svg" alt="">
                     <h1 class="profile-name">Artie Nazarov</h1>
                     <h2 class="position">Director of Projects</h2>
-                    <p class="role-description">--</p>
+                    <p class="role-description">Leads the team for the NeuroTechX Competition</p>
                     <div class="socials">
                         <a href="https://www.linkedin.com"><img src="linkedin-icon.svg" alt=""></a>
                         <a href="https://www.twitter.com"><img src="twitter-icon.svg" alt=""></a>
@@ -174,7 +174,22 @@
                     <img class="profile-picture" src="placeholder-avatar.svg" alt="">
                     <h1 class="profile-name">Leejin Kim</h1>
                     <h2 class="position">Director of External Affairs</h2>
-                    <p class="role-description">--</p>
+                    <p class="role-description">Manages communication with partners and other student organizations</p>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com"><img src="linkedin-icon.svg" alt=""></a>
+                        <a href="https://www.twitter.com"><img src="twitter-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="circle-bg"></div>
+            </div>
+			
+			
+			<div class="profile-card">
+                <div class="profile-card-wrapper">
+                    <img class="profile-picture" src="placeholder-avatar.svg" alt="">
+                    <h1 class="profile-name">Jacqueline Bursalyan</h1>
+                    <h2 class="position">Director of Research</h2>
+                    <p class="role-description">Identifies potential areas of research for club projects</p>
                     <div class="socials">
                         <a href="https://www.linkedin.com"><img src="linkedin-icon.svg" alt=""></a>
                         <a href="https://www.twitter.com"><img src="twitter-icon.svg" alt=""></a>
