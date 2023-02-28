@@ -1,3 +1,6 @@
 # NeurotechSC Website Files
 
-Website is contained in `website-flat/`. All other files are artifacts of website creation.
+Website files are contained in the **website** folder
+
+## TODO:
+- Create a TODO for the remainder of the academic year
