@@ -1,108 +1,127 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="images/icons/Logo5.png" type="image/x-icon">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeuroTechSC</title>
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/icons/Logo5.png" width="32" height="32"> NeuroTechSC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
 
-<body>
-    <!-- HEADER -->
-    <header id="header" class="normal-header">
-        <div class="nav-left nav">
-            <ul>
-                <a href="about-us.html"><li class="navitem">About Us</li></a>
-                <a href="our-team.html"><li class="navitem">Our Team</li></a>
-            </ul>
         </div>
-        <a href="index.html"><img src="images/icons/Logo5.png" alt="" class="nav-logo"></a>
-        <div class="nav-right">
-            <ul>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPfGXRWRUx7sKybmh-t8OIEO2VZv25SVXGhgTD2kS5dgMcw/viewform" target="_blank"><li class="navitem">Get Involved</li></a>
-                <a href="contact-us.html"><li class="navitem">Contact Us</li></a>
-            </ul>
-            <div class="normal-header-socials">
-                <a href="https://www.linkedin.com/company/neurotechsc" target="_blank"><img src="./images/icons/linkedin-icon.svg" alt=""></a>
-                <a href="https://www.instagram.com/neurotechsc/"><img src="./images/icons/instagram-logo.svg" alt=""></a>
-                <a href="https://github.com/neuroTechSC/"><img src="./images/icons/github-icon.svg" alt=""></a>
-            </div>
-        </div>
-    </header>
+      </div>
+    </nav>
 
-    <div class="mobile-header" id="mobile-header">
-        <a href="index.html"><img src="images/icons/Logo5.png" alt=""></a>
-        <div class="links" id="links">
-            <a href="index.html">Home</a>
-            <a href="about-us.html">About Our Club</a>
-            <a href="our-team.html">Our Team</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPfGXRWRUx7sKybmh-t8OIEO2VZv25SVXGhgTD2kS5dgMcw/viewform" target="_blank">Get Involved</a>
-            <a href="contact-us.html">Contact Us</a>
-            <p>Socials</p>
-            <div class="normal-header-socials">
-                <a href="https://www.linkedin.com/company/neurotechsc" target="_blank"><img src="./images/icons/linkedin-icon.svg" alt=""></a>
-                <a href="https://www.instagram.com/neurotechsc/"><img src="./images/icons/instagram-logo.svg" alt=""></a>
-                <a href="https://github.com/neuroTechSC/"><img src="./images/icons/github-icon.svg" alt=""></a>
-            </div>
-        </div>
+    <!-- PAGE CONTENT GOES HERE -->
 
-        <a href="javascript:void(0)" class="mobile-header-bars" id="mobile-header-bars">
-            <img src="images/icons/hamburger.svg" alt="">
-        </a>
+    <!-- Carosel -->
+    <div id="carouselExampleIndicators" class="carousel slide p-2">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel/Baskins_Welcome.png" class="d-block w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/hardware-cropped.png" class="d-block w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/headset.png" class="d-block w-100 rounded-4" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/svr_ui.png" class="d-block w-100 rounded-4" alt="...">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <!-- END HEADER -->
-
-    <div class="content">
-        <div class="main-image-container">
-            <img src="images/carousel/Baskins_Welcome.png" alt="" class="main-image active carousel-img fade">
-            <img src="images/carousel/hardware-cropped.png" alt="" class="inactive carousel-img fade">
-            <img src="images/carousel/headset.png" alt="" class="inactive carousel-img fade">
-            <img src="images/carousel/svr_ui.png" alt="" class="inactive carousel-img fade">
+    <!-- Cards -->
+    <div class="container">
+      <div class="row p-2">
+        <div class="col">
+          <div class="card m-2 border-primary h-100">
+            <h5 class="card-header">Breaking Barriers</h5>
+            <div class="card-body">
+              <p class="card-text">Neurotechnology research is barred with a high cost of entry since basic equipment costs thousands of dollars. With the help of grants and funding from our industry partners, we are able to provide undergraduates the opportunity to use this equipment at no cost.</p>
+            </div>
+          </div>
         </div>
 
-
-        <div class="cards" id="descriptors">
-                <div class="box blue hidden-left">
-                  <h2>Breaking Barriers</h2>
-                  <p>Neurotechnology research is barred with a high cost of entry since basic equipment 
-				  costs thousands of dollars. With the help of grants and funding from our industry partners, 
-				  we are able to provide undergraduates the opportunity to use this equipment at no cost.</p>
-                  <img class ="card-img" src="images/icons/research.png" alt="">
-                </div>
-            
-                <div class="box blue hidden-left">
-                  <h2>Reproducibility</h2>
-                  <p>All of our trained models and software are open-source!</p>
-                  <img class ="card-img" src="images/icons/brain-machine.svg" alt="">
-                </div>
-            
-                <div class="box blue hidden-left">
-                  <h2>Teamwork and Competition</h2>
-                  <p>Help design and create a brain-computer interface for the upcoming <a href="https://neurotechx.github.io/ntx-sc/#/competition">NeuroTechX</a> competition!</p>
-                  <img class ="card-img" src="images/icons/competition.png" alt="">
-                </div>
-
-                <div class="box blue hidden-left">
-                  <h2>Variety of Teams</h2>
-                  <p>Join one of our four teams. No need to be an expert, we will teach you what you need to know!</p>
-                  <p class="teams-bold">Machine Learning, Software, Data, Hardware</p>
-                  <img class ="card-img" src="images/icons/teams.png" alt="">
-
+        <div class="col">
+          <div class="card m-2 border-primary h-100">
+            <h5 class="card-header">Reproducibility</h5>
+            <div class="card-body">
+              <p class="card-text">All of our trained models and software are open-source!</p>
             </div>
-            <div class="wrapper hiden-down" style="display: flex; justify-content: center; width: 100%;">
-                <a href="about-us.html"><button class="button-27" role="button">Learn More</button></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPfGXRWRUx7sKybmh-t8OIEO2VZv25SVXGhgTD2kS5dgMcw/viewform"><button class="button-27" role="button">Get Involved</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="row p-2">
+        <div class="col">
+          <div class="card m-2 border-primary h-100">
+            <h5 class="card-header">Teamwork and Competition</h5>
+            <div class="card-body">
+              <p class="card-text">Help design and create a brain-computer interface for the upcoming <a href="" class="link">NeuroTechX</a> competition!</p>
             </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-2 border-primary h-100">
+            <h5 class="card-header">Variety of Teams</h5>
+            <div class="card-body">
+              <p class="card-text">Join one of our four teams. No need to be an expert, we will teach you what you need to know! Machine Learning, Software, Data, Hardware</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-      <!-- DONE -->
-        
     </div>
 
+    <!-- END CARDS -->
 
-    <script src="js/header.js"></script>
-    <script src="js/index.js"></script>
-</body>
+    <!-- BUTTOS -->
+
+    <!-- END BUTTONS-->
+
+    <!--    END PAGE CONTENT    -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  </body>
 </html>
